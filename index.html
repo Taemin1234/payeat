@@ -5,10 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- jquery -->
-    <script src="./jquery-3.6.0.min.js"></script>
+    <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script type="text/javascript" src="./js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="./js/waypoints.min.js"></script>
   </head>
   <body>
     <header>
@@ -23,13 +35,13 @@
         </div>
 
         <ul class="gnb topnav myTopnav">
-          <li><a>회사 소개</a></li>
+          <li><a href="#">회사 소개</a></li>
           <li class="dropdown">
             <a href="#" class="dropbtn">서비스 소개</a>
             <ul class="lnb dropdown-content">
-              <li><a href="#payeat">페이잇</a></li>
-              <li><a href="#food101">푸드101</a></li>
               <li><a href="#data101">데이터101</a></li>
+              <li><a href="#food101">푸드101</a></li>
+              <li><a href="#payeat">페이잇</a></li>
             </ul>
           </li>
         </ul>
@@ -49,7 +61,7 @@
     </header>
 
     <main>
-      <section class="main-sec">
+      <section class="main-sec section">
         <div class="main-page">
           <div class="main-text">
             <h2>
@@ -61,7 +73,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div class="page-setting">
           <div class="info-box-title">
             <h2>
@@ -71,7 +83,29 @@
           </div>
           <div class="info-box-wrap">
             <div class="info-box">
-              <img src="./logos/payeat.png" alt="" />
+              <img src="./logos/sns로고/ico_you.png" alt="" />
+              <div class="info-box-txt">
+                <h4>개인화</h4>
+                <p>
+                  이커머스에 최적화된 AI 알고리즘 12종을<br />
+                  활용한 "개인화" 상품추천으로 구매심리자극
+                </p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <img src="./logos/sns로고/ico_you.png" alt="" />
+              <div class="info-box-txt">
+                <h4>개인화</h4>
+                <p>
+                  이커머스에 최적화된 AI 알고리즘 12종을<br />
+                  활용한 "개인화" 상품추천으로 구매심리자극
+                </p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <img src="./logos/sns로고/ico_you.png" alt="" />
               <div class="info-box-txt">
                 <h4>개인화</h4>
                 <p>
@@ -83,13 +117,68 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="page-setting"></div>
+
+      <section id="keynote">
+        <div class="keynote-box">
+          <h4>
+            고객이 사고 싶은 상품을
+            <p class="sm-p"></p>
+            알아서 추천하는
+            <p class="lg-p"></p>
+            AI 개인화 알고리즘을
+            <p class="sm-p"></p>
+            경험하세요
+          </h4>
+        </div>
       </section>
-      <section>
-        <div class="page-setting"></div>
+      <section class="section">
+        <div class="page-setting">
+          <div class="count-up">
+            <div class="countup-title">
+              <h2>DIFFERENCE</h2>
+              <h3>
+                데이터가 쌓인 만큼, 창의적 원천 기술이 쌓인 만큼, 품질차이는
+                확실합니다.
+              </h3>
+            </div>
+            <div class="countup-main-wrap">
+              <div class="countup-main">
+                <span class="counter">15,000</span><span>건</span>
+                <div class="content-bar"></div>
+                <p>
+                  아시아 최대 규모인 150억건 이상의<br />
+                  대규모데이터 축적과 자산화
+                </p>
+              </div>
+              <div class="countup-main">
+                <span class="counter">5,000</span>
+                <div class="content-bar"></div>
+                <p>
+                  고품질 데이터 확보를 위해<br />
+                  매일 500만 신규데이터 수집
+                </p>
+              </div>
+              <div class="countup-main">
+                <span class="counter">447</span>
+                <div class="content-bar"></div>
+                <p>
+                  국내 최고 수준의 특허, 논문, SW/상표 등록, 수상/인증 등의 지적
+                  재산권 확보
+                </p>
+              </div>
+              <div class="countup-main">
+                <span class="counter">50</span><span>개 국</span>
+                <div class="content-bar"></div>
+                <p>
+                  5년내 음성/언어/대화/QA/지식의 대화형 AI부문에서 50개국 이상
+                  진출
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="data101">
+      <section id="data101" class="section">
         <div class="page-setting">
           <div class="info-wrap">
             <div>
@@ -122,7 +211,7 @@
         </div>
       </section>
 
-      <section id="food101">
+      <section id="food101" class="section">
         <div class="page-setting">
           <div class="info-wrap">
             <div>
@@ -154,7 +243,7 @@
           </div>
         </div>
       </section>
-      <section id="payeat">
+      <section id="payeat" class="section">
         <div class="page-setting">
           <div class="info-wrap">
             <div>
@@ -188,10 +277,39 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="page-setting"></div>
+      <section class="section">
+        <div class="page-setting">
+          <div class="payeat-story">
+            <div class="story-title">
+              <h3>페이잇 Story</h3>
+            </div>
+            <div class="story-contents">
+              <div class="story-box">
+                <img src="./img/intern.jpg" alt="" />
+                <div class="story-box-contents">
+                  <h4>페이잇 체험형 인턴십 이모저모</h4>
+                  <p>
+                    페이잇이 대구 경북 등지의 대학생을 상대로 진행한 체험형 인턴
+                    현장을 담았습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="story-box">
+                <img src="./img/interview.jpg" alt="" />
+                <div class="story-box-contents">
+                  <h4>영양사들이 쉽게 사용할수 있게 돕고 싶었어요</h4>
+                  <p>
+                    학교 급식 안전 결제 서비스를 운영하며 급식에 관련하여
+                    다방면으로 접하게 되었고 보다 나은 환경을 구축하기 위해
+                    고민했습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
+      <section class="section">
         <div class="page-setting"></div>
       </section>
     </main>
@@ -204,16 +322,16 @@
         </ul>
         <ul class="sns-link">
           <li>
-            <a href="#"><img src="./img/sns로고/ico_blog.svg" alt="" /></a>
+            <a href="#"><img src="" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img src="./img/sns로고/ico_facebook.svg" alt="" /></a>
+            <a href="#"><img src="" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img src="./img/sns로고/ico_insta.svg" alt="" /></a>
+            <a href="#"><img src="" alt="" /></a>
           </li>
           <li>
-            <a href="#"><img src="./img/sns로고/ico_you.svg" alt="" /></a>
+            <a href="#"><img src="" alt="" /></a>
           </li>
         </ul>
       </div>
@@ -239,6 +357,8 @@
 
       <p class="copyright">Copyright &copy 페이잇 Corp. All Rights Reserved</p>
     </footer>
+
+    <!-- slick slide -->
 
     <script src="./js/app.js"></script>
   </body>
