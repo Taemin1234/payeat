@@ -330,7 +330,7 @@ ol {
 
 /* 메인 페이지 */
 
-//첫페이지, 각 사이트 소개 페이지
+//첫페이지, 형제 사이트 소개 페이지
 section {
   width: 100%;
 
@@ -705,7 +705,7 @@ section {
   text-align: center;
 
   span {
-    font-size: 80px;
+    font-size: 78px;
   }
 
   .content-bar {
@@ -872,9 +872,9 @@ section {
   padding: 15px;
 
   h4 {
-    font-size: 20px;
-
-    margin: 0 0 1rem;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0 0 1.3rem;
   }
 
   p {
@@ -1057,10 +1057,6 @@ section {
   }
 }
 
-.fnb .sns-link li {
-  //width: 20px;
-}
-
 .footer-web {
   box-sizing: border-box;
   padding: 10px 0;
@@ -1149,7 +1145,7 @@ section {
   }
 
   .footer-cs {
-    width: 30%;
+    width: 20%;
   }
 
   .fnb .sns-link li {

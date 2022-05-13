@@ -548,7 +548,7 @@ section:nth-child(even) {
   text-align: center;
 }
 .countup-main-wrap span {
-  font-size: 80px;
+  font-size: 78px;
 }
 .countup-main-wrap .content-bar {
   width: 26px;
@@ -681,8 +681,9 @@ section:nth-child(even) {
   padding: 15px;
 }
 .story-box-contents h4 {
-  font-size: 20px;
-  margin: 0 0 1rem;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 0 0 1.3rem;
 }
 .story-box-contents p {
   display: -webkit-box;
@@ -927,7 +928,7 @@ section:nth-child(even) {
   }
 
   .footer-cs {
-    width: 30%;
+    width: 20%;
   }
 
   .fnb .sns-link li {
