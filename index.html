@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>페이잇 주식회사</title>
 
     <!-- google fonts-->
+    <!-- 노토 상스 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +15,43 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- 나눔 폰트 -->
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+
+    <!-- favicon 설정 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logos/payeat_favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logos/payeat_favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logos/payeat_favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logos/payeat_favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./logos/payeat_favicon/safari-pinned-tab.svg"
+      color="#2d9675"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- jquery -->
     <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
@@ -31,29 +69,31 @@
     <header>
       <!-- 메뉴 바 -->
       <nav class="navbar">
-        <div class="logo">
-          <a href="#">
-            <img src="./logos/payeat.png" alt="" class="top-logo" />
-          </a>
-          <a href="#">
-            <img src="" alt="" />
-          </a>
-        </div>
+        <div class="flex-navbar">
+          <div class="logo">
+            <a href="#">
+              <img src="./logos/payeat.png" alt="" class="top-logo" />
+            </a>
+            <a href="#">
+              <img src="" alt="" />
+            </a>
+          </div>
 
-        <ul class="gnb topnav myTopnav">
-          <li><a href="#">회사 소개</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">서비스 소개</a>
-            <ul class="lnb dropdown-content">
-              <li><a href="#data101">데이터101</a></li>
-              <li><a href="#food101">푸드101</a></li>
-              <li><a href="#payeat">페이잇</a></li>
-            </ul>
-          </li>
-        </ul>
-        <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()"
-          >☰</a
-        >
+          <ul class="gnb topnav myTopnav">
+            <li><a href="#">회사 소개</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">서비스 소개</a>
+              <ul class="lnb dropdown-content">
+                <li><a href="#data101">데이터101</a></li>
+                <li><a href="#food101">푸드101</a></li>
+                <li><a href="#payeat">페이잇</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()"
+            >☰</a
+          >
+        </div>
 
         <div class="sns-ico">
           <a href="#" target="_blank">
@@ -125,17 +165,19 @@
         </div>
       </section>
 
-      <section id="keynote">
-        <div class="keynote-box">
-          <h4>
-            고객이 사고 싶은 상품을
-            <p class="sm-p"></p>
-            알아서 추천하는
-            <p class="lg-p"></p>
-            AI 개인화 알고리즘을
-            <p class="sm-p"></p>
-            경험하세요
-          </h4>
+      <section id="banner">
+        <div class="banner-box">
+          <div class="box-opacity">
+            <h4>
+              고객이 사고 싶은 상품을
+              <p class="sm-p"></p>
+              알아서 추천하는
+              <p class="lg-p"></p>
+              AI 개인화 알고리즘을
+              <p class="sm-p"></p>
+              경험하세요
+            </h4>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -193,7 +235,7 @@
             <div>
               <h4>어떤 식단이 필요한지 푸드i는 이미 알고 있다.</h4>
               <h3><span>인공지능&nbsp;</span><span>식단추천 서비스</span></h3>
-              <h2>"월간식단연구소"</h2>
+              <h2>월간식단연구소</h2>
             </div>
           </div>
 
@@ -209,10 +251,12 @@
               </div>
             </div>
             <div class="sns-btn">
-              <a href="#"><img src="./logos/sns로고/ico_blog.svg" alt="" /> </a>
-              <a href="#"><img src="./logos/sns로고/ico_you.svg" alt="" /></a>
-              <a href="#"><img src="./logos/sns로고/ico_insta.svg" alt="" /></a>
-              <a href="#">
+              <a href="https://blog.naver.com/payeat2020" target="_blank"
+                ><img src="./logos/sns로고/ico-nvblog-color.png" alt="" />
+              </a>
+              <a><img src="./logos/sns로고/ico_you.svg" alt="" /></a>
+              <a><img src="./logos/sns로고/ico_insta.svg" alt="" /></a>
+              <a>
                 <img src="./logos/sns로고/ico_facebook.svg" alt="" />
               </a>
             </div>
@@ -226,7 +270,7 @@
             <div>
               <h4>입찰준비 골칫거리 한번에 해결하세요!!</h4>
               <h3><span>급식&nbsp;</span><span>입찰가격 정보 서비스</span></h3>
-              <h2>"푸드101"</h2>
+              <h2>푸드101</h2>
             </div>
           </div>
 
@@ -242,10 +286,16 @@
               </div>
             </div>
             <div class="sns-btn">
-              <a href="#"><img src="./logos/sns로고/ico_blog.svg" alt="" /> </a>
-              <a href="#"><img src="./logos/sns로고/ico_you.svg" alt="" /></a>
-              <a href="#"><img src="./logos/sns로고/ico_insta.svg" alt="" /></a>
-              <a href="#">
+              <a href="https://blog.naver.com/spjpa2020" target="_blank"
+                ><img src="./logos/sns로고/ico-nvblog-color.png" alt="" />
+              </a>
+              <a><img src="./logos/sns로고/ico_you.svg" alt="" /></a>
+              <a
+                href="https://www.instagram.com/food101official/"
+                target="_blank"
+                ><img src="./logos/sns로고/ico-insta-color.png" alt=""
+              /></a>
+              <a>
                 <img src="./logos/sns로고/ico_facebook.svg" alt="" />
               </a>
             </div>
@@ -258,7 +308,7 @@
             <div>
               <h4>건강한 학교급식 시장조성에 앞장서는</h4>
               <h3><span>학교급식&nbsp;</span><span>안전결제 서비스</span></h3>
-              <h2>"페이잇"</h2>
+              <h2>페이잇</h2>
             </div>
           </div>
 
@@ -276,10 +326,16 @@
               </div>
             </div>
             <div class="sns-btn">
-              <a href="#"><img src="./logos/sns로고/ico_blog.svg" alt="" /> </a>
-              <a href="#"><img src="./logos/sns로고/ico_you.svg" alt="" /></a>
-              <a href="#"><img src="./logos/sns로고/ico_insta.svg" alt="" /></a>
-              <a href="#">
+              <a href="https://blog.naver.com/spjpa" target="_blank"
+                ><img src="./logos/sns로고/ico-nvblog-color.png" alt="" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCZGt0mAb-0NUSCK1KqBaoKA"
+                target="_blank"
+                ><img src="./logos/sns로고/ico_you-color.png" alt=""
+              /></a>
+              <a><img src="./logos/sns로고/ico_insta.svg" alt="" /></a>
+              <a>
                 <img src="./logos/sns로고/ico_facebook.svg" alt="" />
               </a>
             </div>
@@ -290,27 +346,33 @@
         <div class="page-setting">
           <div class="payeat-story">
             <div class="story-title">
-              <h3>페이잇 Story</h3>
+              <h3>Payeat Story</h3>
             </div>
             <div class="story-contents">
               <div class="story-box">
-                <img src="./img/intern.jpg" alt="" />
+                <img src="./img/article1.png" alt="" />
                 <div class="story-box-contents">
-                  <h4>페이잇 체험형 인턴십 이모저모</h4>
+                  <h4>
+                    페이잇, 학교식단정보 통합 빅데이터 플랫폼 ‘월간식단연구소’
+                    구축
+                  </h4>
                   <p>
-                    페이잇이 대구 경북 등지의 대학생을 상대로 진행한 체험형 인턴
-                    현장을 담았습니다.
+                    영남대학교 창업보육센터 입주기업 페이잇(주)은 학교 등 공공
+                    급식정보 빅데이터 거래소 플랫폼 ‘월간식단연구소’를 구축하고
+                    이를 본격 운영할 것임을 13일 밝혔다.
                   </p>
                 </div>
               </div>
               <div class="story-box">
-                <img src="./img/interview.jpg" alt="" />
+                <img src="./img/article2.png" alt="" />
                 <div class="story-box-contents">
-                  <h4>영양사들이 쉽게 사용할수 있게 돕고 싶었어요</h4>
+                  <h4>
+                    페이잇(주), 학교 월간 식단정보 통합 빅데이터 플랫폼 구축
+                  </h4>
                   <p>
-                    학교 급식 안전 결제 서비스를 운영하며 급식에 관련하여
-                    다방면으로 접하게 되었고 보다 나은 환경을 구축하기 위해
-                    고민했습니다.
+                    학교급식 플랫폼 전문기업 페이잇(주)이 영양교사들의
+                    효율적인입찰 업무 지원을 위해 식단정보 통합 빅데이터
+                    플랫폼을 구축한다.
                   </p>
                 </div>
               </div>
@@ -359,29 +421,10 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="fnb">
-        <ul class="page-link">
-          <li><a href="../etc/service.html">이용약관</a></li>
-          <li><a href="../etc/privacy.html">개인정보처리방침</a></li>
-        </ul>
-        <ul class="sns-link">
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-        </ul>
-      </div>
       <div class="footer-web">
         <div class="footer-logo">
           <img src="./logos/payeat.png" alt="" />
+          <img src="./logos/venture-confirm-align.png" alt="" />
         </div>
         <div class="footer-contents">
           페이잇 주식회사 &nbsp; (대표 : 박진성)<br />
@@ -400,7 +443,7 @@
         </div>
       </div>
 
-      <p class="copyright">Copyright &copy 페이잇 Corp. All Rights Reserved</p>
+      <p class="copyright">Copyright &copy Payeat Corp. All Rights Reserved</p>
     </footer>
 
     <script src="./js/app.js"></script>
