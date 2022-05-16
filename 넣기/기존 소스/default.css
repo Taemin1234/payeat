@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumSquareL';
+    src: url('../fonts/NanumSquareL.eot');
+    src: url('../fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NanumSquareL.woff') format('woff'),
+         url('../fonts/NanumSquareL.ttf') format('truetype'),
+         url('../fonts/NanumSquareOTFLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nanum-square-r';
+    src: url('../fonts/nanumsquarer.eot');
+    src: url('../fonts/nanumsquarer.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nanumsquarer.woff2') format('woff2'),
+         url('../fonts/nanumsquarer.woff') format('woff'),
+         url('../fonts/nanumsquarer.ttf') format('truetype'),
+         url('../fonts/nanumsquarer.svg#nanumsquarerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nanum-square-b';
+    src: url('../fonts/nanumsquareb.eot');
+    src: url('../fonts/nanumsquareb.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nanumsquareb.woff2') format('woff2'),
+         url('../fonts/nanumsquareb.woff') format('woff'),
+         url('../fonts/nanumsquareb.ttf') format('truetype'),
+         url('../fonts/nanumsquareb.svg#nanumsquarebregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{overflow-y:scroll}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;max-height:1000000px;-webkit-text-size-adjust:none}
+body,input,textarea,select,button,table{color:#666;font-size:15px;font-family:'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif}
+img,fieldset{border:0;vertical-align:top}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{color:#333;text-decoration:none}
+a:hover,a:active,a:focus{color:#000;text-decoration:none}
+hr,legend{display:none !important}
+table{border-collapse:collapse}
+
+.blind{overflow:hidden;position:absolute;top:-999px;width:1px;height:1px}
+.clearfix:after{content:"";display:block;clear:both}
