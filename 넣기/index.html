@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kor-KR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>학교급식 안전결제서비스-페이잇</title>
+    <title>페이잇 주식회사</title>
+
+    <!-- google fonts-->
+    <!-- 노토 상스 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- font -->
+    <!-- 나눔 폰트 -->
     <link
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
       rel="stylesheet"
@@ -16,270 +25,451 @@
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
       rel="stylesheet"
     />
-  </head>
-  <body>
-    <section class="sec1">
-      <div class="container">
-        <div class="title-slogan">
-          <h2>
-            <img src="./source-img/title_01.png" alt="" />
-          </h2>
-          <h3>
-            <span>페이잇</span>
-            이 왜 생겨나게 되었을까요?
-          </h3>
-          <p>
-            <span
-              >학교급식 납품업체와 식자재 유통업체간 결제방식이 투명하지
-              않고</span
-            >
-            <span
-              >여신관리가 효율적이지 않아, 급식 식자재 납품 거래시 금융사고가
-              빈번하게 발생하고</span
-            >
-            <span
-              >하부 유통업체들에게는 제대로 정산이 안되는 경우가 있고, 이러한
-              이슈들로 인한</span
-            >
-            <span
-              >식자재 공급 유통에 여러 문제들을 야기시키고 있어 안전결제에 대한
-              필요성이 대두되고 있습니다.</span
-            >
-          </p>
-          <a
-            href="https://www.youtube.com/watch?v=w1LAK71k3iI"
-            class="pro_click"
-          >
-            <img src="./source-img/btn_movie.png" alt="" />
-          </a>
-          <input
-            style="display: none"
-            type="checkbox"
-            name="chkbox"
-            checked="checked"
-          />
-        </div>
-        <div class="bg-phone wow">
-          <img src="./source-img/phone.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="how">
-      <div class="container">
-        <div class="title-slogan title-slogan-left wow">
-          <h2>
-            <img src="./source-img/title_02.png" alt="" />
-          </h2>
-          <h3>
-            어떻게
-            <span>페이잇</span>
-            이
-            <br />
-            활용되는지 궁금하시죠?
-          </h3>
-          <p>정직하고 안전한 결제의 초석을 다지다.</p>
-          <a class="btn-detail">
-            <img src="./source-img/btn_detail.png" alt="" />
-          </a>
-        </div>
-      </div>
-    </section>
-    <div class="service-modal">
-      <div class="modal-container">
-        <div class="modal-pay">
-          <img src="./source-img/guide_map.png" alt="" />
-          <div class="modal-close">
-            <a href>
-              <img src="./source-img/btn_close.png" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="advantage">
-      <div class="container">
-        <div
-          class="title-slogan wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="
-            visibility: hidden;
-            animation-delay: 0.2s;
-            animation-name: none;
-          "
-        >
-          <h2><img src="./source-img/title_03.png" /></h2>
-          <h3><span>페이잇</span>의 주요특징을 알아볼까요?</h3>
-          <p>
-            <span
-              >최저 기금 수수료, 초기 가입비가 없으며, 학교급식 공익추구에
-              앞장섭니다.</span
-            >
-            <span
-              >기존 결제방식 이외에 정직하고 안전한 결제 대안 추가, 업체들의
-              자율적 선택이 가능합니다.</span
-            >
-          </p>
-        </div>
 
-        <div class="tabs-container">
-          <ul
-            class="clearfix wow fadeInUp"
-            data-wow-delay="0.4s"
-            style="
-              visibility: hidden;
-              animation-delay: 0.4s;
-              animation-name: none;
-            "
-          >
-            <li class="active">
-              <a><img src="./source-img/tab_01_on.png" /></a
-              ><span>1차업체</span>
-            </li>
-            <li>
-              <a><img src="./source-img/tab_02_off.png" /></a
-              ><span>2차업체</span>
-            </li>
-            <li>
-              <a><img src="./source-img/tab_03_off.png" /></a><span>학교</span>
-            </li>
-          </ul>
+    <!-- favicon 설정 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logos/payeat_favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logos/payeat_favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logos/payeat_favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logos/payeat_favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./logos/payeat_favicon/safari-pinned-tab.svg"
+      color="#2d9675"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
 
-          <div class="tabs-body tabs-body-01 clearfix">
-            <div
-              class="phone-image wow fadeInLeft"
-              data-wow-delay="0.2s"
-              style="
-                visibility: hidden;
-                animation-delay: 0.2s;
-                animation-name: none;
-              "
-            >
-              <div class="phone-thumb">
-                <img src="./source-img/phone_01.png" />
-                <img src="./source-img/phone_02.png" />
-                <img src="./source-img/phone_03.png" />
-              </div>
-            </div>
-            <div class="advantage-group">
-              <div
-                class="advantage-01 wow fadeInRight"
-                data-wow-delay="0.4s"
-                style="
-                  visibility: hidden;
-                  animation-delay: 0.4s;
-                  animation-name: none;
-                "
-              >
-                <div>
-                  <h3><span>1차업체는</span>한도를 확보하고<i>!</i></h3>
-                  <p>
-                    <span>페이잇의 안전결제서비스로 부터</span>한도(95%)를 부여
-                    받아 필요한 자금을 운용한다.
-                  </p>
-                </div>
-                <div>
-                  <h3><span>2차업체는</span>100% 안전을<i>!</i></h3>
-                  <p>
-                    <span>페이잇을 통해 상품 출고시</span>100% 안전한 선입금
-                    확보 가능
-                  </p>
-                </div>
-                <div>
-                  <h3><span>학교는 투명한</span>유통구조의 실현<i>!</i></h3>
-                  <p>
-                    <span>페이잇은 투명하고 안전한</span>학교급식 유통구조를
-                    확보한다.
-                  </p>
-                </div>
-              </div>
-              <div class="advantage-02">
-                <h4><img src="./source-img/title_advantage.png" /></h4>
-                <div>
-                  <ul class="wow fadeInRight">
-                    <li>
-                      <div class="icon">
-                        <img src="./source-img/icon_01.png" />
-                      </div>
-                      <div class="advantage-item">
-                        <p><span>학교급식 낙찰 기준으로</span>한도(95%) 부여</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <img src="./source-img/icon_02.png" />
-                      </div>
-                      <div class="advantage-item">
-                        <p><span>2차업체 결제금액</span>정산 편리</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul
-                    class="wow fadeInRight animated"
-                    style="visibility: visible; animation-name: fadeInRight"
-                  >
-                    <li>
-                      <div class="icon">
-                        <img src="./source-img/icon_03.png" />
-                      </div>
-                      <div class="advantage-item">
-                        <p>
-                          <span>상품 출고시 100%</span>안전한 선입금 확보 가능
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <img src="./source-img/icon_04.png" />
-                      </div>
-                      <div class="advantage-item">
-                        <p><span>1차업체</span>여신관리 편리</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul
-                    class="wow fadeInRight animated"
-                    style="visibility: visible; animation-name: fadeInRight"
-                  >
-                    <li>
-                      <div class="icon">
-                        <img src="./source-img/icon_05.png" />
-                      </div>
-                      <div class="advantage-item">
-                        <p><span>급식 식자재 유통업체간</span>금융사고 방지</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <img src="./source-img/icon_06.png" />
-                      </div>
-                      <div class="advantage-item">
-                        <p>
-                          <span>투명하고 안전한 학교급식</span>유통구조 확보
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="./js/custom.js"></script>
-    <script src="./js/wow.js"></script> -->
-
+    <!-- jquery -->
+    <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    <script src="./js/wow.js.다운로드"></script>
-    <script src="./js/scripts.js.다운로드"></script>
-    <!-- <script src="./js/custom.js.다운로드"></script> -->
-    <script src="./js/custom.js"></script>
+    <!-- counterup js -->
+    <script type="text/javascript" src="./js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="./js/waypoints.min.js"></script>
+
+    <!-- slick slider -->
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick.css" />
+  </head>
+  <body>
+    <header>
+      <!-- 메뉴 바 -->
+      <nav class="navbar">
+        <div class="flex-navbar">
+          <div class="logo">
+            <a href="#">
+              <img src="./logos/payeat.png" alt="" class="top-logo" />
+            </a>
+            <a href="#">
+              <img src="" alt="" />
+            </a>
+          </div>
+
+          <ul class="gnb topnav myTopnav">
+            <li><a href="#">회사 소개</a></li>
+            <li class="dropdown">
+              <a href="./detail-main/data101-detail.html" class="dropbtn">
+                서비스 소개
+              </a>
+              <ul class="lnb dropdown-content">
+                <li><a href="#data101" class="scroll-move">데이터101</a></li>
+                <li><a href="#food101" class="scroll-move">푸드101</a></li>
+                <li><a href="#payeat" class="scroll-move">페이잇</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()"
+            >☰</a
+          >
+        </div>
+
+        <div class="sns-ico">
+          <a href="#" target="_blank">
+            <img src="./logos/sns로고/ico_you.svg" alt="" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="./logos/sns로고/ico_blog.svg" alt="" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 메인 페이지 -->
+      <section class="main-sec section">
+        <div class="main-page">
+          <div class="main-img">
+            <div class="main-box first-main">
+              <h2>
+                학교급식거래의<br />
+                건강한<br />
+                유통시장을<br />
+                만들어나갑니다.
+              </h2>
+            </div>
+            <div class="main-box second-main">
+              <h2>
+                학교급식거래의<br />
+                건강한<br />
+                유통시장을<br />
+                만들어나갑니다.
+              </h2>
+            </div>
+            <div class="main-box third-main">
+              <h2>
+                학교급식거래의<br />
+                건강한<br />
+                유통시장을<br />
+                만들어나갑니다.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="page-setting">
+          <div class="info-box-title">
+            <h2>
+              <span>자동화 시대,</span>
+              <span>다양한 <strong>추천 전략 확보</strong>가 곧 경쟁력</span>
+            </h2>
+          </div>
+          <div class="info-box-wrap">
+            <div class="info-box">
+              <img src="./img/diet.png" alt="" />
+              <div class="info-box-txt">
+                <h4>개인화</h4>
+                <p>
+                  이커머스에 최적화된 AI 알고리즘 12종을<br />
+                  활용한 "개인화" 상품추천으로 구매심리자극
+                </p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <img src="./img/computing.png" alt="" />
+              <div class="info-box-txt">
+                <h4>빅 데이터</h4>
+                <p>
+                  이커머스에 최적화된 AI 알고리즘 12종을<br />
+                  활용한 "개인화" 상품추천으로 구매심리자극
+                </p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <img src="./img/artificial-intelligence.png" alt="" />
+              <div class="info-box-txt">
+                <h4>인공지능</h4>
+                <p>
+                  이커머스에 최적화된 AI 알고리즘 12종을<br />
+                  활용한 "개인화" 상품추천으로 구매심리자극
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="banner">
+        <div class="banner-box">
+          <div class="box-opacity">
+            <h4>
+              고객이 사고 싶은 상품을
+              <p class="sm-p"></p>
+              알아서 추천하는
+              <p class="lg-p"></p>
+              AI 개인화 알고리즘을
+              <p class="sm-p"></p>
+              경험하세요
+            </h4>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="page-setting">
+          <div class="count-up">
+            <div class="countup-title">
+              <h2>DIFFERENCE</h2>
+              <h3>
+                데이터가 쌓인 만큼, 창의적 원천 기술이 쌓인 만큼, 품질차이는
+                확실합니다.
+              </h3>
+            </div>
+            <div class="countup-main-wrap">
+              <div class="countup-main">
+                <span class="counter">16,000</span><span>건</span>
+                <div class="content-bar"></div>
+                <p>
+                  국내 최대 규모인 16,000억건 이상의<br />
+                  대규모데이터 축적과 자산화
+                </p>
+              </div>
+              <div class="countup-main">
+                <span class="counter">3,000</span>
+                <div class="content-bar"></div>
+                <p>
+                  고품질 데이터 확보를 위해<br />
+                  매일 3000개 신규데이터 수집
+                </p>
+              </div>
+              <div class="countup-main">
+                <span class="counter">128</span>
+                <div class="content-bar"></div>
+                <p>
+                  국내 최고 수준의 특허, 논문, SW/상표 등록, <br />수상/인증
+                  등의 지적 재산권 확보
+                </p>
+              </div>
+              <div class="countup-main">
+                <span class="counter">50</span><span>개 국</span>
+                <div class="content-bar"></div>
+                <p>
+                  5년내 음성/언어/대화/QA/지식의 대화형 AI부문에서<br />
+                  50개국 이상 진출
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 페이잇 형제 홈페이지 소개 -->
+      <section id="data101" class="section">
+        <div class="page-setting">
+          <div class="info-wrap">
+            <div>
+              <h4>어떤 식단이 필요한지 푸드i는 이미 알고 있다.</h4>
+              <h3><span>인공지능&nbsp;</span><span>식단추천 서비스</span></h3>
+              <h2>월간식단연구소</h2>
+            </div>
+          </div>
+
+          <div class="page-img">
+            <img src="./img/data101-pc.png" alt="" />
+          </div>
+
+          <div class="short-cut-btn">
+            <div class="web-btn">
+              <div class="btn">
+                <a href="./detail-main/data101-detail.html">상세보기</a>
+              </div>
+              <div class="btn">
+                <a href="#" target="_blank">바로가기 </a>
+              </div>
+            </div>
+            <div class="sns-btn">
+              <a href="https://blog.naver.com/payeat2020" target="_blank"
+                ><img src="./logos/sns로고/ico-nvblog-color.png" alt="" />
+              </a>
+              <a><img src="./logos/sns로고/ico_you.svg" alt="" /></a>
+              <a><img src="./logos/sns로고/ico_insta.svg" alt="" /></a>
+              <a>
+                <img src="./logos/sns로고/ico_facebook.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="food101" class="section">
+        <div class="page-setting">
+          <div class="info-wrap">
+            <div>
+              <h4>입찰준비 골칫거리 한번에 해결하세요!!</h4>
+              <h3><span>급식&nbsp;</span><span>입찰가격 정보 서비스</span></h3>
+              <h2>푸드101</h2>
+            </div>
+          </div>
+
+          <div class="page-img">
+            <img src="./img/food101-pc.png" alt="" />
+          </div>
+
+          <div class="short-cut-btn">
+            <div class="web-btn">
+              <div class="btn">
+                <a href="./detail-main/food101-detail.html">상세보기</a>
+              </div>
+              <div class="btn">
+                <a href="https://food101.net/" target="_blank"> 바로가기 </a>
+              </div>
+            </div>
+            <div class="sns-btn">
+              <a href="https://blog.naver.com/spjpa2020" target="_blank"
+                ><img src="./logos/sns로고/ico-nvblog-color.png" alt="" />
+              </a>
+              <a><img src="./logos/sns로고/ico_you.svg" alt="" /></a>
+              <a
+                href="https://www.instagram.com/food101official/"
+                target="_blank"
+                ><img src="./logos/sns로고/ico-insta-color.png" alt=""
+              /></a>
+              <a>
+                <img src="./logos/sns로고/ico_facebook.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="payeat" class="section">
+        <div class="page-setting">
+          <div class="info-wrap">
+            <div>
+              <h4>건강한 학교급식 시장조성에 앞장서는</h4>
+              <h3><span>학교급식&nbsp;</span><span>안전결제 서비스</span></h3>
+              <h2>페이잇</h2>
+            </div>
+          </div>
+
+          <div class="page-img">
+            <img src="./img/payeat-pc.png" alt="" />
+          </div>
+
+          <div class="short-cut-btn">
+            <div class="web-btn">
+              <div class="btn">
+                <a href="./detail-main/payeat-detail.html">상세보기</a>
+              </div>
+              <div class="btn">
+                <a href="./payeat-hp/index.html" target="_blank"> 바로가기 </a>
+              </div>
+            </div>
+            <div class="sns-btn">
+              <a href="https://blog.naver.com/spjpa" target="_blank"
+                ><img src="./logos/sns로고/ico-nvblog-color.png" alt="" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCZGt0mAb-0NUSCK1KqBaoKA"
+                target="_blank"
+                ><img src="./logos/sns로고/ico_you-color.png" alt=""
+              /></a>
+              <a><img src="./logos/sns로고/ico_insta.svg" alt="" /></a>
+              <a>
+                <img src="./logos/sns로고/ico_facebook.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="page-setting">
+          <div class="payeat-story">
+            <div class="story-title">
+              <h3>Payeat Story</h3>
+            </div>
+            <div class="story-contents">
+              <div class="story-box">
+                <img src="./img/article1.png" alt="" />
+                <div class="story-box-contents">
+                  <h4>
+                    페이잇, 학교식단정보 통합 빅데이터 플랫폼 ‘월간식단연구소’
+                    구축
+                  </h4>
+                  <p>
+                    영남대학교 창업보육센터 입주기업 페이잇(주)은 학교 등 공공
+                    급식정보 빅데이터 거래소 플랫폼 ‘월간식단연구소’를 구축하고
+                    이를 본격 운영할 것임을 13일 밝혔다.
+                  </p>
+                </div>
+              </div>
+              <div class="story-box">
+                <img src="./img/article2.png" alt="" />
+                <div class="story-box-contents">
+                  <h4>
+                    페이잇(주), 학교 월간 식단정보 통합 빅데이터 플랫폼 구축
+                  </h4>
+                  <p>
+                    학교급식 플랫폼 전문기업 페이잇(주)이 영양교사들의
+                    효율적인입찰 업무 지원을 위해 식단정보 통합 빅데이터
+                    플랫폼을 구축한다.
+                  </p>
+                </div>
+              </div>
+              <div class="story-box">
+                <img src="./img/pb-product.jpg" alt="" />
+                <div class="story-box-contents">
+                  <h4>페이잇 PB 상품 "조이잇" 출시!</h4>
+                  <p>
+                    학교 급식시장에 새로운 바람을 몰고 온 페이잇은 이 달 16일
+                    자체 브랜드 상품인 "조이잇"을 런칭하기로 했다.
+                  </p>
+                </div>
+              </div>
+              <div class="story-box">
+                <img src="./img/영양.jpg" alt="" />
+                <div class="story-box-contents">
+                  <h4>
+                    "업무의 효율성이 늘어나 다양한 시도와 퀄리티 높은 성과를
+                    이루어 냈어요"
+                  </h4>
+                  <p>
+                    페이잇을 3년 동안 사용해오신 현직 영양사 000님의
+                    인터뷰입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="last-box">
+          <div class="box-opacity">
+            <div class="last-box-text">
+              <h4>
+                학교급식의 새로운 패러다임, <br />
+                페이잇과 함께 하세요
+              </h4>
+
+              <p>건강한 학교 급식 시장이 페이잇의 성공입니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-web">
+        <div class="footer-logo">
+          <img src="./logos/payeat.png" alt="" />
+          <img src="./logos/venture-confirm-align.png" alt="" />
+        </div>
+        <div class="footer-contents">
+          페이잇 주식회사 &nbsp; (대표 : 박진성)<br />
+          경상북도 경산시 대학로 280, 영남대학교 창업보육센터 신관 212호(대동,
+          영남대학교)
+          <br />사업자번호 : 176-88-01702<br />
+          통신판매업번호 : 제2021-대구수성구-0014호
+        </div>
+        <div class="footer-cs">
+          <p>Contact</p>
+          <ul>
+            <li>전화 : 1544-5202</li>
+            <li>팩스 : 0504-390-7321</li>
+            <li>이메일 : help@payeat.co.kr</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">Copyright &copy Payeat Corp. All Rights Reserved</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
