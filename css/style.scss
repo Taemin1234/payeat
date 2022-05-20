@@ -393,7 +393,7 @@ section {
     width: 100%;
     height: 100%;
 
-    padding: 3rem 0 0 1rem;
+    padding: 4rem 0 0 4rem;
 
     background-color: rgba($color: #000000, $alpha: 0.5);
   }
@@ -581,11 +581,6 @@ section {
 }
 
 @media (min-width: 500px) {
-  .main-box {
-    .h2 {
-      //font-size: 1.4rem;
-    }
-  }
 }
 
 @media (min-width: 768px) {
