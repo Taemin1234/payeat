@@ -13,14 +13,20 @@ $(function () {
   });
 });
 
-// $(window).on("scroll", function () {
-//   if ($(window).scrollTop() < 230) {
-//     $(".navbar").css("opacity", "0.5");
-//   } else {
-//     $(".navbar").css("opacity", "1");
-//   }
+// $(function () {
+//   //resize: 브라우저 창 너비의 변경된 값을 width 변수에 저장
+//   $(window).resize(function () {
+//     var width = $(window).width();
+//     if (width >= 992) {
+//       console.log("992 이상");
+//     } else if (width >= 768 && width < 992) {
+//       console.log("768 이상");
+//     } else if (width < 768) {
+//       console.log("768 이하");
+//     }
+//   });
 
-//   console.log($("html").scrollTop());
+//   $(window).trigger("resize"); //강제로 호출하는 함수
 // });
 
 //메인 페이지 사진
@@ -28,35 +34,62 @@ $(function () {
 $(function () {
   $(".main-img").slick({
     Infinity: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     arrows: true,
-    autoplay: true,
-
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 2,
-          autoplay: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          pauseOnHover: true,
-        },
-      },
-    ],
+    autoplay: false,
   });
 });
 
-// 스클로 시 인포 박스 올라오기
+// 메인 글자 타이핑
+
+var typingBool = false;
+var typingIdx = 0;
+var liIndex = 0;
+var liLength = $(".typing-txt>ul>li").length;
+
+// 타이핑될 텍스트를 가져온다
+var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
+typingTxt = typingTxt.split(""); // 한글자씩 자른다.
+if (typingBool == false) {
+  // 타이핑이 진행되지 않았다면
+  typingBool = true;
+  var tyInt = setInterval(typing, 100); // 반복동작
+}
+
+function typing() {
+  $(".typing ul li").removeClass("on");
+  $(".typing ul li").eq(liIndex).addClass("on");
+  if (typingIdx < typingTxt.length) {
+    // 타이핑될 텍스트 길이만큼 반복
+    $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); // 한글자씩 이어준다.
+    typingIdx++;
+  } else {
+    if (liIndex < liLength - 1) {
+      //다음문장으로  가기위해 인덱스를 1증가
+      liIndex++;
+      //다음문장을 타이핑하기위한 셋팅
+      typingIdx = 0;
+      typingBool = false;
+      typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
+
+      //다음문장 타이핑전 1초 쉰다
+      clearInterval(tyInt);
+      //타이핑종료
+
+      setTimeout(function () {
+        //1초후에 다시 타이핑 반복 시작
+        tyInt = setInterval(typing, 100);
+      }, 200);
+    } else if (liIndex == liLength - 1) {
+      //마지막 문장까지 써지면 반복종료
+      clearInterval(tyInt);
+    }
+  }
+}
+
+// 스크롤 시 인포 박스 올라오기
 
 $(window).on("scroll", function () {
-  //297에서 올라오기
   if ($(window).scrollTop() > 270) {
     $(".info-box-wrap").css("transform", "translateY(-3rem)");
   } else {
@@ -137,7 +170,7 @@ $(window).on("scroll", function () {
   }
 });
 
-// 슬라이더
+// 페이잇 스토리 슬라이더
 
 $(function () {
   $(".story-contents").slick({
@@ -168,5 +201,77 @@ $(function () {
         },
       },
     ],
+  });
+});
+
+$(function scrollup992() {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 713) {
+      $(".food101 section")
+        .eq(2)
+        .find(".content-detail-text")
+        .css("transform", "translateY(-2rem)");
+
+      $(".food101 section")
+        .eq(2)
+        .find(".content-detail-img")
+        .css("transform", "translateY(-2rem)");
+    } else {
+      $(".food101 section")
+        .eq(2)
+        .find(".content-detail-text")
+        .css("transform", "translateY(4rem)");
+
+      $(".food101 section")
+        .eq(2)
+        .find(".content-detail-img")
+        .css("transform", "translateY(4rem)");
+    }
+
+    if ($(window).scrollTop() > 1519) {
+      $(".food101 section")
+        .eq(3)
+        .find(".content-detail-text")
+        .css("transform", "translateY(-2rem)");
+
+      $(".food101 section")
+        .eq(3)
+        .find(".content-detail-img")
+        .css("transform", "translateY(-2rem)");
+    } else {
+      $(".food101 section")
+        .eq(3)
+        .find(".content-detail-text")
+        .css("transform", "translateY(4rem)");
+
+      $(".food101 section")
+        .eq(3)
+        .find(".content-detail-img")
+        .css("transform", "translateY(4rem)");
+    }
+
+    if ($(window).scrollTop() > 2382) {
+      $(".food101 section")
+        .eq(4)
+        .find(".content-detail-text")
+        .css("transform", "translateY(-2rem)");
+
+      $(".food101 section")
+        .eq(4)
+        .find(".content-detail-img")
+        .css("transform", "translateY(-2rem)");
+    } else {
+      $(".food101 section")
+        .eq(4)
+        .find(".content-detail-text")
+        .css("transform", "translateY(4rem)");
+
+      $(".food101 section")
+        .eq(4)
+        .find(".content-detail-img")
+        .css("transform", "translateY(4rem)");
+    }
+
+    //console.log($("html").scrollTop());
   });
 });
