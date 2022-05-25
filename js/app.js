@@ -30,8 +30,7 @@ $(function () {
 // });
 
 //메인 페이지 사진
-
-$(function () {
+/*$(function () {
   $(".main-img").slick({
     Infinity: true,
     slidesToShow: 1,
@@ -40,9 +39,9 @@ $(function () {
     autoplaySpeed: 8000,
   });
 });
+*/
 
 // 메인 글자 타이핑
-
 $(window).ready(function () {
   var typingBool = false;
   var typingIdx = 0;
@@ -55,7 +54,7 @@ $(window).ready(function () {
   if (typingBool == false) {
     // 타이핑이 진행되지 않았다면
     typingBool = true;
-    var tyInt = setInterval(typing, 10); // 반복동작
+    var tyInt = setInterval(typing, 50); // 반복동작
   }
 
   function typing() {
@@ -80,7 +79,7 @@ $(window).ready(function () {
 
         setTimeout(function () {
           //1초후에 다시 타이핑 반복 시작
-          tyInt = setInterval(typing, 40);
+          tyInt = setInterval(typing, 200);
         }, 200);
       } else if (liIndex == liLength - 1) {
         //마지막 문장까지 써지면 반복종료
@@ -177,30 +176,16 @@ $(window).on("scroll", function () {
 
 $(function () {
   $(".story-contents").slick({
-    Infinity: true,
+    centerMode: true,
     slidesToShow: 3,
-    arrows: true,
-
+    slidesToScroll: 1,
+    variableWidth: true,
     responsive: [
       {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 992,
+        breakpoint: 601,
         settings: {
           slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          pauseOnHover: true,
+          variableWidth: false,
         },
       },
     ],
