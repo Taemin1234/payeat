@@ -984,6 +984,7 @@ section {
     }
 
     p {
+      height: 80px;
       font-size: 1.4vw;
     }
   }
@@ -1326,6 +1327,18 @@ section {
   }
 }
 
+.sm-recruit {
+  a {
+    width: 25%;
+  }
+}
+
+.sm-custom {
+  a {
+    width: 50%;
+  }
+}
+
 .detail-top-page {
   margin-top: 30px;
 }
@@ -1632,7 +1645,7 @@ section {
 
 @media (min-width: 992px) {
   .footer {
-    height: 350px;
+    height: 290px;
   }
 
   .footer-web {
