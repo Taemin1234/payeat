@@ -11,6 +11,17 @@ $(function () {
 
     $("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
   });
+
+  // 모바일에서 메뉴 버튼 클릭 시 2차 메뉴 나타나고 다른 메뉴 닫기
+
+  $(this)
+    .find(".dropdown")
+    .click(function () {
+      var $thisContent = $(this).find(".dropdown-content");
+
+      $thisContent.toggleClass("menu-open");
+      $(".dropdown-content").not($thisContent).removeClass("menu-open");
+    });
 });
 
 // $(function () {
