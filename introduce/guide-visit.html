@@ -64,6 +64,12 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/pc.css" />
 
+    <!-- 폰트어썸 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css"
+    />
+
     <!-- jquery -->
     <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -89,7 +95,7 @@
 
           <ul class="gnb topnav myTopnav">
             <li class="dropdown">
-              <a class="dropbtn">
+              <a href="./vision.html" class="dropbtn active-border">
                 회사소개
                 <img src="../img/ico_arrow.svg" alt="" class="menu-arrow" />
               </a>
@@ -101,12 +107,12 @@
                   <a href="./group.html">조직도</a>
                 </li>
                 <li>
-                  <a href="./partner.html">협력사</a>
+                  <a href="./guide-visit.html">찾아오는 길</a>
                 </li>
               </ul>
             </li>
             <li class="dropdown">
-              <a class="dropbtn">
+              <a href="../detail-main/data101-detail.html" class="dropbtn">
                 서비스 소개
                 <img src="../img/ico_arrow.svg" alt="" class="menu-arrow" />
               </a>
@@ -123,7 +129,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a class="dropbtn">
+              <a href="../recruit/info.html" class="dropbtn">
                 인재채용
                 <img src="../img/ico_arrow.svg" alt="" class="menu-arrow" />
               </a>
@@ -143,7 +149,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a class="dropbtn">
+              <a href="../center/quotation.html" class="dropbtn">
                 고객센터
                 <img src="../img/ico_arrow.svg" alt="" class="menu-arrow" />
               </a>
@@ -161,70 +167,128 @@
             >☰</a
           >
         </div>
+        <div class="right-sidebar-box">
+          <div class="right-sidebar">
+            <div class="menu-1">
+              <ul>
+                <li class="menu-step">
+                  <a> 회사소개 </a>
+                  <ul class="menu-inner">
+                    <li>
+                      <a href="./vision.html">VISION</a>
+                    </li>
+                    <li>
+                      <a href="./history.html">연혁</a>
+                    </li>
+                    <li>
+                      <a href="./group.html">조직도</a>
+                    </li>
+                    <li>
+                      <a href="./guide-visit.html">찾아오는 길</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-step">
+                  <a>서비스 소개</a>
+                  <ul class="menu-inner">
+                    <li>
+                      <a href="../detail-main/data101-detail.html"
+                        >데이터 101</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../detail-main/food101-detail.html">푸드 101</a>
+                    </li>
+                    <li>
+                      <a href="../detail-main/payeat-detail.html">페이잇</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-step">
+                  <a>인재채용</a>
+                  <ul class="menu-inner">
+                    <li>
+                      <a href="../recruit/info.html">채용정보</a>
+                    </li>
+                    <li>
+                      <a href="../recruit/welfare.html">복리후생</a>
+                    </li>
+                    <li>
+                      <a href="../recruit/line.html">승진제도</a>
+                    </li>
+                    <li>
+                      <a href="../recruit/gallery.html">갤러리</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-step">
+                  <a>고객센터</a>
+                  <ul class="menu-inner">
+                    <li>
+                      <a href="../center/quotation.html">견적문의</a>
+                    </li>
+                    <li>
+                      <a href="../center/recruit-inquiry.html">채용문의</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
     <div class="sub-main">
       <div class="sub-menu sm-recruit">
         <a href="./vision.html">Vision</a>
-
         <a href="./history.html">연혁</a>
         <a href="./group.html">조직도</a>
-        <a href="./partner.html">협력사</a>
+        <a href="./guide-visit.html" class="active">찾아오는 길</a>
       </div>
     </div>
 
-    <section>
-      <div class="sub_content">
-        <div class="sub_partner">
-          <h4><strong>Partnership</strong></h4>
-          <div class="sub_tit">페이잇의 주요 관계사를 소개합니다.</div>
-          <div
-            class="partner"
-            data-aos="fade-up"
-            data-aos-easing="ease"
-            data-aos-delay="400"
-          >
-            <a href="http://www.slworld.com/korea/index.asp"
-              ><img src="./img/partner1.jpg"
-            /></a>
-            <a href="https://www.hyundai.co.kr/Index.hub"
-              ><img src="./img/partner2.jpg"
-            /></a>
-            <a href="https://www.hyundai-autoever.com/kor/main/index.do"
-              ><img src="./img/partner3.jpg"
-            /></a>
-            <a href="https://www.chevrolet.co.kr/index.jsp"
-              ><img src="./img/partner4.jpg"
-            /></a>
-            <a href="https://www.daelimcorp.co.kr/ko/pc/index.do"
-              ><img src="./img/partner5.jpg"
-            /></a>
+    <section class="guide-visit page-setting">
+      <div class="sub_content sub_center">
+        <h4><strong>찾아오는 길</strong></h4>
+      </div>
+      <div class="map">
+        <div class="post-box">
+          (주)페이잇 <br />
+          <i class="fa-solid fa-location-dot"></i>
+          경상북도 경산시 대학로 280 영남대학교 (G12) 창업보육센터 212호
+        </div>
+      </div>
+      <div class="traffic-box">
+        <div class="traffic">
+          <div class="traffic-title">
+            <i class="fa-solid fa-train-subway"></i>
+            <h3>지하철</h3>
           </div>
-          <div
-            class="partner"
-            data-aos="fade-up"
-            data-aos-easing="ease"
-            data-aos-delay="800"
-          >
-            <a href="http://www.sewoonms.com/"
-              ><img src="./img/partner6.jpg"
-            /></a>
-            <a href="https://ko.daedong.co.kr/"
-              ><img src="./img/partner7.jpg"
-            /></a>
-            <a href="https://www.mahindra.com/"
-              ><img src="./img/partner8.jpg"
-            /></a>
-            <a href="http://icams.kr/"><img src="./img/partner9.jpg" /></a>
-            <a href="http://www.krmotors.com/"
-              ><img src="./img/partner10.jpg"
-            /></a>
+          <div class="traffic-content">2호선 영남대역 2번, 3번 출구</div>
+        </div>
+        <div class="traffic">
+          <div class="traffic-title">
+            <i class="fa-solid fa-bus"></i>
+            <h3>버스</h3>
+          </div>
+          <div class="traffic-content">
+            <span>영남대 앞 기준</span>
+            <p>
+              - 109, 309, 449, 509, 609, 649, 719, 803, 809, 840, 909, 911, 918,
+              980, 991, 100번
+            </p>
           </div>
         </div>
-        <script>
-          AOS.init();
-        </script>
+        <div class="traffic">
+          <div class="traffic-title">
+            <i class="fa-solid fa-train"></i>
+            <h3>기차</h3>
+          </div>
+          <div class="traffic-content">
+            경산역에서 버스 509, 609, 809번 탑승
+          </div>
+        </div>
       </div>
     </section>
 
@@ -237,7 +301,7 @@
             <img src="../logos/venture-confirm-align.png" alt="" />
           </div>
           <div class="footer-contents">
-            페이잇 주식회사 &nbsp; (대표 : 박진성)<br />
+            페이잇 주식회사<br />
             경상북도 경산시 대학로 280, 영남대학교 창업센터 212호
             <br />사업자번호 : 176-88-01702<br />
             통신판매업번호 : 제2021-대구수성구-0014호
@@ -253,7 +317,7 @@
         </div>
 
         <p class="copyright">
-          Copyright &copy Payeat Corp. All Rights Reserved
+          Copyright &copy 2020 Payeat Corp. All Rights Reserved
         </p>
       </footer>
     </section>
