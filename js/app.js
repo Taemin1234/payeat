@@ -254,6 +254,7 @@ $(function () {
   });
 });
 
+//상세소개, 서비스 소개 페이지 올라오기
 $(function scrollup992() {
   $(window).on("scroll", function () {
     if ($(window).scrollTop() > 713) {
