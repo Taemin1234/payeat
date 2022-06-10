@@ -241,6 +241,7 @@ $(function () {
     centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    speed: 200,
     variableWidth: true,
     responsive: [
       {
