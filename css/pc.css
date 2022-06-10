@@ -1868,6 +1868,7 @@ ul.slick-dots li.slick-active button {
   padding-left: 15px;
   font-size: 22px;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 .table_num .navy {
   padding: 0 3px;
@@ -2611,7 +2612,7 @@ ul.slick-dots li.slick-active button {
   }
 
   .sub_info .info_content .info_btn .recruit-letsgo {
-    width: 2000px;
+    width: 200px;
   }
 
   .sub_info .info_content .info_btn .recruit-letsgo:nth-child(1) {
