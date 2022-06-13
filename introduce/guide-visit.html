@@ -263,13 +263,28 @@
           var container = document.getElementById("map");
           var options = {
             center: new kakao.maps.LatLng(
-              35.82600249999991,
-              128.75197329999952
+              35.82599311093511,
+              128.75623613871284
             ),
             level: 3,
           };
 
+          //지도를 생성
           var map = new kakao.maps.Map(container, options);
+
+          // 마커표시위치 설정
+          var markerPosition = new kakao.maps.LatLng(
+            35.82599311093511,
+            128.75623613871284
+          );
+
+          //마커 생성
+          var marker = new kakao.maps.Marker({
+            position: markerPosition,
+          });
+
+          // 마커가 지도 위에 표시되도록 설정합니다
+          marker.setMap(map);
         </script>
 
         <div class="post-box">
