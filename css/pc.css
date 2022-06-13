@@ -1923,11 +1923,12 @@ ul.slick-dots li.slick-active button {
 .gallery_box .gallery_photo img {
   position: absolute;
   top: 30%; /*이미지 들어오면 0*/
-  left: 26%;
-  width: 50%; /*이미지 들어오면 100%*/
+  left: 30%;
+  width: 39%; /*이미지 들어오면 100%*/
   /* min-width: 100%; */
-  height: 44%; /*이미지 들어오면 100%*/
+  height: 36%; /*이미지 들어오면 100%*/
   transition: all ease 0.2s;
+  opacity: 0.5;
   /* object-fit: cover; */
 }
 .gallery_box a li {
