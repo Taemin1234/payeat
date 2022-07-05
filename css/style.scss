@@ -1585,13 +1585,52 @@ section {
   h4 {
     font-size: 5.4vw;
 
-    padding: 2rem 0;
+    padding: 2rem 0 1.5rem;
   }
 
   p {
     font-size: 4vw;
     line-height: 1.4;
     color: $border-color;
+
+    margin-bottom: 2rem;
+  }
+
+  .direct-btn {
+    width: 250px;
+    height: 50px;
+    padding: 15px;
+    margin: 0 auto;
+
+    color: #fff;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    a {
+      display: block;
+    }
+
+    &:hover {
+      background-color: #fff;
+      border-color: $border-color;
+      color: #000;
+    }
+  }
+}
+
+.fd101 {
+  border: solid 1px $theme-food101;
+  background-color: $theme-food101;
+}
+
+.pyeat {
+  border: solid 1px $theme-color;
+  background-color: $theme-color;
+
+  a {
+    color: #fff;
   }
 }
 

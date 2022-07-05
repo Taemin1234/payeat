@@ -1269,12 +1269,43 @@ section:nth-child(even) {
 }
 .detail-main h4 {
   font-size: 5.4vw;
-  padding: 2rem 0;
+  padding: 2rem 0 1.5rem;
 }
 .detail-main p {
   font-size: 4vw;
   line-height: 1.4;
   color: #777;
+  margin-bottom: 2rem;
+}
+.detail-main .direct-btn {
+  width: 250px;
+  height: 50px;
+  padding: 15px;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.detail-main .direct-btn a {
+  display: block;
+}
+.detail-main .direct-btn:hover {
+  background-color: #fff;
+  border-color: #777;
+  color: #000;
+}
+
+.fd101 {
+  border: solid 1px #ef2c2c;
+  background-color: #ef2c2c;
+}
+
+.pyeat {
+  border: solid 1px #2d9675;
+  background-color: #2d9675;
+}
+.pyeat a {
+  color: #fff;
 }
 
 .custom-sub-main {
