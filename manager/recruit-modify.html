@@ -69,32 +69,29 @@
     <div id="container">
       <div id="left_box">
         <a href="./gallery.html" class="cate_tit">갤러리관리</a>
-        <a href="./manage-quotation.html" class="cate_tit active"
-          >견적문의관리</a
-        >
-        <a href="./manage-recruit.html" class="cate_tit">채용문의관리</a>
+        <a href="./manage-quotation.html" class="cate_tit">견적문의관리</a>
+        <a href="./manage-recruit.html" class="cate_tit active">채용문의관리</a>
       </div>
       <div id="right_box">
         <div class="list_box">
           <div class="list_top">
             <div class="btn_box">
-              <div
-                class="del_btn"
-                onClick="window.confirm('삭제하시겠습니까?');"
-              >
-                삭제
-              </div>
+              <div class="del_btn" onClick="request_delete(-1);">삭제</div>
             </div>
           </div>
           <div class="table_info">
             <table>
               <thead>
                 <tr>
-                  <th class="ga_chk"><input type="checkbox" /></th>
-                  <th class="ga_company">회사명</th>
+                  <th class="ga_chk">
+                    <input
+                      type="checkbox"
+                      value="-1"
+                      onclick="checkbox_all_select();"
+                    />
+                  </th>
                   <th class="ga_name">이름</th>
-                  <th class="ga_cname">부서명</th>
-                  <th class="ga_phone">일반전화</th>
+                  <th class="ga_phone">연락처</th>
                   <th class="ga_date">날짜</th>
                   <th class="ga_complete">문의확인</th>
                   <th class="ga_name">담당자</th>
@@ -102,94 +99,99 @@
               </thead>
               <tbody>
                 <!-- tr클릭시 해당 문의내역이 오른쪽 화면에 나타나야합니다 -->
-
+                <?php for($i=0; $i<5; $i++){ ?>
                 <tr>
                   <td class="ga_chk"><input type="checkbox" /></td>
-                  <td class="ga_company">다솔엔지니어링</td>
                   <td class="ga_name">홍길동</td>
-                  <td class="ga_cname">마케팅팀</td>
                   <td class="ga_phone">01012341234</td>
                   <td class="ga_date">21.08.26</td>
                   <td class="ga_complete">
-                    <a href="" class="light_btn">확인</a>
+                    <a href="javascript:request_confirm(10)" class="light_btn">
+                      확인
+                    </a>
                   </td>
                   <td class="ga_name">운영자</td>
                 </tr>
-
+                <?php } ?>
+                <?php for($i=0; $i<10; $i++){ ?>
                 <tr>
                   <td class="ga_chk"><input type="checkbox" /></td>
-                  <td class="ga_company">다솔엔지니어링</td>
                   <td class="ga_name">홍길동</td>
-                  <td class="ga_cname">마케팅팀</td>
                   <td class="ga_phone">01012341234</td>
                   <td class="ga_date">21.08.26</td>
                   <td class="ga_complete">
-                    <a class="light_btn">문의완료</a>
+                    <a href="javascript:request_confirm(8)" class="light_btn">
+                      문의완료
+                    </a>
                   </td>
                   <td class="ga_name">운영자</td>
                 </tr>
+                <?php } ?>
               </tbody>
             </table>
             <div class="btn_wrap">
               <div id="pageing" class="pagenation_wrap">
-                <ul>
-                  <li class="active">1</li>
-                  <li onclick="CheckSearch(2)">2</li>
-                  <li onclick="CheckSearch(3)">3</li>
-                  <li onclick="CheckSearch(4)">4</li>
-                  <li onclick="CheckSearch(5)">5</li>
-                  <li onclick="CheckSearch(2)">다음</li>
-                </ul>
+                <li
+                  class="active"
+                  onclick="document.location.href='./employment_modify.php?idx=40&page=1&pageSeg=';"
+                >
+                  1
+                </li>
               </div>
             </div>
           </div>
         </div>
         <div class="list_box">
-          <div class="plus_top">
-            <div class="list_tit">문의내용</div>
-            <div class="btn_box">
-              <a href="./counseling-modify.html" class="de_btn">수정</a>
-              <a class="print_btn">저장</a>
+          <form
+            action="./employment_modify_proc.php"
+            method="post"
+            id="employment_form"
+          >
+            <input type="hidden" name="manager_idx" value="3" />
+            <input type="hidden" name="content_idx" value="40" />
+            <div class="plus_top">
+              <div class="list_tit">문의내용(수정)</div>
+              <div class="btn_box">
+                <a href="./manage-recruit.html" class="de_btn">취소</a>
+                <a
+                  class="print_btn"
+                  onclick="if(window.confirm('저장하시겠습니까?')){$('#employment_form').submit();}"
+                  >저장</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="table_info">
-            <ul class="table_line">
-              <li class="table_ga">
-                <div class="plus_tit">회사명</div>
-                <div class="plus_company">다솔엔지니어링</div>
-                <div class="plus_tit">이름</div>
-                <div class="plus_name">홍길동</div>
-              </li>
-              <li class="table_ga">
-                <div class="plus_tit">부서명</div>
-                <div class="plus_cname">마케팅팀</div>
-              </li>
-              <li class="table_ga">
-                <div class="plus_tit">일반전화</div>
-                <div class="plus_phone">01012341234</div>
-                <div class="plus_tit">날짜</div>
-                <div class="plus_date">21.08.26</div>
-              </li>
-              <li class="table_ga">
-                <div class="plus_tit">첨부파일</div>
-                <!-- 문의에 첨부한 파일을 다운받을 수 있게 해주세요 -->
-                <div class="plus_down">
-                  <a href="">견적서.pdf</a
-                  ><a class="line_btn mg_10">다운받기</a>
-                </div>
-              </li>
-              <li class="table_ga">
-                <div class="plus_tit">문의내용</div>
-                <div class="plus_edit pa_l10">견적문의 드립니다.</div>
-              </li>
-              <li class="table_ga">
-                <div class="plus_tit">조치결과</div>
-                <div class="plus_edit pa_l10">상담완료되었습니다.</div>
-              </li>
-            </ul>
-          </div>
+            <div class="table_info">
+              <ul class="table_line">
+                <li class="table_ga">
+                  <div class="plus_tit">이름</div>
+                  <div class="plus_name">홍길동</div>
+                  <div class="plus_tit">연락처</div>
+                  <div class="plus_phone">01012341234</div>
+                  <div class="plus_tit">날짜</div>
+                  <div class="plus_date">22.06.15</div>
+                </li>
+                <li class="table_ga">
+                  <div class="plus_tit">첨부파일</div>
+                  <div class="plus_down">첨부파일 없음</div>
+                </li>
+                <li class="table_ga">
+                  <div class="plus_tit">문의내용</div>
+                  <div class="plus_edit pa_l10"></div>
+                </li>
+                <li class="table_ga">
+                  <div class="plus_tit">조치결과</div>
+                  <div class="plus_attention">
+                    <textarea name="inquiry_result"></textarea>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+
+    <!-- 푸터 -->
+    <footer></footer>
   </body>
 </html>
