@@ -234,6 +234,28 @@ $(window).on("scroll", function () {
   // console.log($("html").scrollTop());
 });
 
+//메인페이지 페이잇 갤러리 슬라이더
+
+$(function () {
+  $(".gallery-slide").slick({
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+        },
+      },
+    ],
+  });
+});
+
 // 페이잇 스토리 슬라이더
 
 $(function () {
@@ -241,7 +263,8 @@ $(function () {
     centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    speed: 200,
+    autoplay: true,
+    autoplaySpeed: 2000,
     variableWidth: true,
     responsive: [
       {
