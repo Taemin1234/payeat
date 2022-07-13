@@ -1920,7 +1920,7 @@ ul.slick-dots li.slick-active button {
   position: relative;
   border: 1px solid #ddd;
 }
-.gallery_box .gallery_photo img {
+.gallery_box .gallery_photo_ready img {
   position: absolute;
   top: 33%; /*이미지 들어오면 0*/
   left: 36%;
@@ -1930,6 +1930,16 @@ ul.slick-dots li.slick-active button {
   transition: all ease 0.2s;
   opacity: 0.2;
   /* object-fit: cover; */
+}
+.gallery_box .gallery_photo img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  transition: all ease 0.2s;
+  object-fit: cover;
 }
 .gallery_box a li {
   padding-bottom: 15%;

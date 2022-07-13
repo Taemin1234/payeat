@@ -927,6 +927,20 @@ section:nth-child(even) {
     height: 70px;
   }
 }
+.gallery-pics {
+  height: 300px;
+  width: 450px;
+  margin: 0 20px;
+  border-radius: 5px;
+}
+.gallery-pics a {
+  display: block;
+}
+.gallery-pics img {
+  width: 100%;
+  height: 300px;
+}
+
 .payeat-story {
   width: 100%;
 }
@@ -1094,6 +1108,10 @@ section:nth-child(even) {
   .sbc-title {
     height: 52px;
     position: relative;
+  }
+
+  .gallery-pics {
+    width: 95%;
   }
 }
 @media (min-width: 500px) {
