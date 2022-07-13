@@ -163,7 +163,7 @@ a.light_btn {
   font-size: 12px;
   border: 1px solid #ddd;
   cursor: pointer;
-  width: 76px;
+  width: 88px;
   display: inline-block;
 }
 .btn_selet {
@@ -689,15 +689,11 @@ input.textbox {
   margin: 0 auto;
 }
 .login_bg .login_box {
-  position: absolute;
-  top: 28%;
-  left: 50%;
-
-  transform: translate(-50%);
   background: #fff;
   box-shadow: 2px 2px 20px rgb(0 0 0 / 10%);
   align-items: center;
   width: 800px;
+  margin: 293px auto;
   height: 350px;
 }
 .login_bg .login_box:after {
