@@ -600,6 +600,16 @@ section {
   }
 }
 
+.menu365-go {
+  width: 100%;
+
+  padding: 0 8vw;
+
+  img {
+    width: 50%;
+  }
+}
+
 .page-setting {
   position: relative;
 
@@ -687,6 +697,7 @@ section {
 
     &:hover {
       background-color: #ddd;
+      border: transparent;
     }
   }
 }
@@ -727,18 +738,23 @@ section {
   }
 }
 
-#data101 .sns-btn a img,
-#food101 .sns-btn a img,
-#payeat .sns-btn a img {
-  filter: none;
+.sns-btn a {
+  img {
+    filter: none;
+  }
 }
 
-#data101 .sns-btn a,
-#food101 .sns-btn a:not(:nth-child(odd)),
-#payeat .sns-btn a:not(:nth-child(-n + 2)) {
+.sns-active {
   background-color: $border-color !important;
   cursor: default;
 }
+
+// #data101 .sns-btn a,
+// #food101 .sns-btn a:not(:nth-child(odd)),
+// #payeat .sns-btn a:not(:nth-child(-n + 2)) {
+//   background-color: $border-color !important;
+//   cursor: default;
+// }
 
 .page-setting,
 .info-wrap,
@@ -782,6 +798,14 @@ section {
     font-size: 6.5vw;
 
     font-weight: bold;
+  }
+
+  .menu365-go {
+    padding-left: 14vw;
+
+    img {
+      width: 300px;
+    }
   }
 }
 
@@ -893,6 +917,10 @@ section {
   .typing-txt,
   .typing {
     font-size: 54px;
+  }
+
+  .main-img {
+    margin-bottom: 45px;
   }
 }
 
@@ -1067,6 +1095,12 @@ section {
       font-size: 1.3rem;
     }
   }
+
+  .info-box-title {
+    h2 {
+      font-size: 2rem;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -1077,6 +1111,14 @@ section {
   .info-box-title {
     h2 {
       font-size: 2.8rem;
+    }
+  }
+
+  .menu101 {
+    .info-box-title {
+      h2 {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -1519,14 +1561,14 @@ section {
 }
 
 .intro-sub-main {
-  background-image: url(../img/intro-bg.jpg);
+  background-image: url(../img/intro-top-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .detail-sub-main {
-  background-image: url(../img/detail-bg.jpg);
+  background-image: url(../img/service-top-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1631,29 +1673,38 @@ section {
 
     margin-bottom: 2rem;
   }
+}
 
-  .direct-btn {
-    width: 250px;
-    height: 50px;
-    padding: 15px;
-    margin: 0 auto;
+.direct-btn {
+  width: 250px;
+  height: 50px;
+  padding: 15px;
+  margin: 0 auto;
 
-    color: #fff;
+  color: #fff;
 
-    border-radius: 3px;
+  border-radius: 3px;
 
-    cursor: pointer;
+  cursor: pointer;
+
+  a {
+    display: block;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: #fff;
+    border-color: $border-color;
 
     a {
-      display: block;
-    }
-
-    &:hover {
-      background-color: #fff;
-      border-color: $border-color;
       color: #000;
     }
   }
+}
+
+.mn101 {
+  border: solid 1px $theme-data101;
+  background-color: $theme-data101;
 }
 
 .fd101 {
@@ -1794,6 +1845,50 @@ section {
     width: 100%;
   }
 }
+
+.menu365-wel {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.menu-text {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 6vw;
+    font-weight: bold;
+
+    text-align: center;
+  }
+
+  .menut-title {
+    font-size: 6vw;
+  }
+
+  h3 {
+    margin: 1.5rem 0;
+    line-height: 1.3;
+
+    text-align: center;
+  }
+
+  .direct-btn {
+    width: 200px;
+  }
+}
+
+.menu-img {
+  width: 80%;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .custom-sub-main {
     background-position: 82% center;
@@ -1844,6 +1939,33 @@ section {
   .content-detail-img {
     height: 630px;
   }
+
+  .menu-img {
+    width: 60%;
+  }
+
+  .menu-text {
+    .menut-title {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-text {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  .menu365-wel {
+    max-width: 720px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1891,6 +2013,52 @@ section {
 
   .content-detail-img {
     margin: 0;
+  }
+
+  .menu-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .direct-btn {
+      margin: 0;
+    }
+  }
+
+  .mc-left {
+    flex-direction: row-reverse;
+  }
+
+  .menu-text {
+    width: 410px;
+    margin: 0 20px;
+
+    h2 {
+      font-size: 2.7rem;
+      font-weight: bold;
+
+      text-align: left;
+    }
+
+    .menut-title {
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      text-align: left;
+
+      margin: 1.5rem 0;
+      line-height: 1.3;
+    }
+  }
+
+  .menu-img {
+    max-width: 540px;
+    margin: 0 20px;
   }
 }
 
